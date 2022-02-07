@@ -1,0 +1,16 @@
+<h1 class="title">{{ title }}</h1>
+
+<app-calculator-form
+  (operation)="changeOperation($event)"
+  (number1)="changeNumber1($event)"
+  (number2)="changeNumber2($event)"
+></app-calculator-form>
+
+<app-calculator-brain
+  [operation]="requestedOperation"
+  [number1]="requestedNumber1"
+  [number2]="requestedNumber2"
+  (result)="changeResult($event)"
+></app-calculator-brain>
+
+<app-calculator-display [result]="result"></app-calculator-display>

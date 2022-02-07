@@ -1,0 +1,49 @@
+<h3>
+  Please select one of the operations below and enter two numbers to obtain a
+  result.
+</h3>
+
+<div class="input-controls">
+  <form>
+    <mat-radio-group
+      value="operation"
+      #group="matRadioGroup"
+      (change)="onSelectOperation(group.value)"
+    >
+      <mat-radio-button
+        *ngFor="let op of enumSource"
+        [value]="[op.id]"
+        [checked]="op.id == operation"
+        >{{ op.name }}</mat-radio-button
+      >
+    </mat-radio-group>
+
+    <br />
+    <br />
+
+    <label for="number1">Number</label>
+    <input
+      type="text/number"
+      class="form-control-no1"
+      id="number1"
+      name="number1"
+      [(ngModel)]="number1"
+      (keyup)="onNumber1Changed()"
+      placeholder="Enter Number..."
+    />
+    <br />
+    <br />
+    <label for="number2">Number</label>
+    <input
+      type="text/number"
+      class="form-control-no2"
+      id="number2"
+      name="number2"
+      [(ngModel)]="number2"
+      (keyup)="onNumber2Changed()"
+      placeholder="Enter Number..."
+    />
+  </form>
+</div>
+<br />
+<br />

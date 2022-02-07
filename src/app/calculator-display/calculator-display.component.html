@@ -1,0 +1,6 @@
+<div class="app-calculator-display">
+  <label for="resultCaption">Result:</label>
+  <label for="result" [ngClass]="result.success === true ? 'valid' : 'error'">{{
+    result.message
+  }}</label>
+</div>

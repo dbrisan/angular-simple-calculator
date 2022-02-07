@@ -1,0 +1,36 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* Global Styles */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2 {
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 125%;
+}
+h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body,
+input[text],
+button {
+  color: #333;
+  font-family: Cambria, Georgia;
+}
+a {
+  cursor: pointer;
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #444;
+  margin: 8px;
+}
